@@ -1,17 +1,41 @@
 {
   "name": "504mvp-scanner",
   "version": "0.1.0",
-  "description": "Lightweight local web vuln scanner for learning (parameter discovery + response diff)",
+  "description": "Lightweight local web vuln scanner (parameter discovery + response-diff) - education",
   "main": "lib/scanner.js",
   "bin": {
-    "504scan": "bin/cli.js"
+    "504scan": "./bin/cli.js"
   },
   "type": "module",
+  "files": [
+    "lib/",
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "start": "node bin/cli.js",
-    "test-site": "npx http-server test_site -p 8080"
+    "test-site": "npx http-server test_site -p 8080",
+    "lint": "echo \"no lint configured\""
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hej-13/504mvp.git"
+  },
+  "keywords": [
+    "security",
+    "scanner",
+    "sqli",
+    "xss",
+    "learning"
+  ],
+  "author": "Hej <hejwien@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hej-13/504mvp/issues"
+  },
+  "homepage": "https://github.com/hej-13/504mvp#readme",
   "dependencies": {
-    "axios": "^1.13.1"
+    "axios": "^1.4.0"
   }
 }
