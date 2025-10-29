@@ -1,3 +1,17 @@
+# Node
 node_modules/
+npm-debug.log
+package-lock.json
+
+# Build & cache
+dist/
+coverage/
+*.tgz
+
+# Local env/config
 .env
+.vscode/
 .DS_Store
+
+# Git
+.git/
