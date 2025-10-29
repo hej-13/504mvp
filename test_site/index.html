@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Test Site</title></head>
+<body>
+  <h1>504mvp Test Page</h1>
+  <p id="msg">파라미터: <span id="p"></span></p>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    const id = params.get('id') || "";
+    document.getElementById('p').textContent = id;
+
+    // 의도적으로 ' 에러 메시지 포함 예시 (학습용)
+    if (id.includes("'")) {
+      document.body.innerHTML += "<pre>SQL error: Syntax error near '''</pre>";
+    }
+  </script>
+</body>
+</html>
