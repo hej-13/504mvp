@@ -7,7 +7,7 @@ It automatically detects URL parameters and performs simple **response-diff** ch
 > 🌐 Purpose: Learning and entry-level cloud security practice  
 > 📦 Delivery: NPM package + CLI tool (`504scan`)
 
----
+----
 
 ## 🧭 Project Overview
 
